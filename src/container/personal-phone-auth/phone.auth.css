@@ -1,0 +1,16 @@
+.fake-input-placeholder p{
+    margin: 0;
+}
+.phone-auth .am-input-control .fake-input-container {
+    height: .20rem;
+}
+.phone-auth .am-input-extra{
+    font-size: .12rem;
+    border: 1px solid #d86776;
+    color: #d86776;
+    padding: .05rem .1rem;
+    border-radius:.05rem;
+}
+.am-list-item .am-input-label.am-input-label-5 {
+    width: .85rem;
+}

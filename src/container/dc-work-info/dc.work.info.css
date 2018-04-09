@@ -1,0 +1,19 @@
+.picker .am-list-line .am-list-extra{
+    text-align: left;
+    flex-basis: 100%;
+}
+.am-list-item.am-input-disabled .am-input-label,.am-list-item .am-input-control input:disabled {
+    color: black;
+}
+.am-textarea-label{
+    font-size: .14rem;
+}
+.system .am-list-item .am-list-line{
+    padding-right: .1rem;
+}
+.system .am-list-item.am-checkbox-item .am-list-thumb .am-checkbox-inner{
+    left: 0;
+}
+.system .am-list-item .am-list-thumb:first-child {
+    margin-right: 0;
+}

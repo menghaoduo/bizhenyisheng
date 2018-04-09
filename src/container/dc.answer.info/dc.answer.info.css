@@ -1,0 +1,22 @@
+.answer-info{
+    height: .36rem;
+    font-size: .14rem;
+}
+.answer-info-avatar{
+    display: flex;
+    align-items: center;
+}
+.answer-info-avatar img {
+    width: .3rem;
+    height: .3rem;
+    margin-right: .1rem;
+    border-radius: 100%;
+}
+.am-checkbox-inner {
+    width: .18rem;
+    height: .18rem;
+}
+.am-checkbox-agree .am-checkbox-agree-label {
+    font-size: .14rem;
+    margin-left: .25rem;
+}

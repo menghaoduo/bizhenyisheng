@@ -1,0 +1,55 @@
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.qrcode-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #24262A;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.qrcode-c {
+    padding: .15rem;
+    width: 80%;
+    background: #fff;
+    border-radius: 5px;
+}
+.qrcode-c .my-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.qrcode-c .my-info .avatar-c {
+    margin-right: .1rem;
+    width: .56rem;
+    height: .56rem;
+}
+.qrcode-c .my-info .avatar-c img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: #f6f6f6 1px solid;
+}
+.my-code{
+    margin: 0 auto;
+    width: 2.7rem;
+    height: 2.7rem;
+ }
+.my-code img{
+    width: 100%;
+    height: 100%;
+}

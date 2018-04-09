@@ -1,0 +1,30 @@
+.am-list-item{
+    min-height: .44rem;
+}
+
+.am-list-item .am-list-line .am-list-content {
+    font-size: .14rem;
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+}
+.am-list-content .wen-title{
+    width: 65%;
+    display: inline-block;
+}
+.am-list-content .wen-title2{
+    width: 35%;
+    display: inline-block;
+}
+.ion-ios-help-outline{
+    font-size: .16rem;
+    font-weight: bolder;
+    padding-left: .05rem;
+}
+.am-list-item img {
+    width: .48rem;
+    height: .48rem;
+}
+.am-list-item .am-list-line .am-list-brief {
+    font-size: .14rem;
+    margin-top: .02rem;
+}

@@ -1,0 +1,90 @@
+.doctor-info{
+    height: 1.41rem;
+}
+.doctor-info .score {
+    font-size: .12rem;
+    color: #F1BB38;
+    line-height: .24rem;
+}
+.doctor-info .am-list-line .am-list-content{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.doctor-info .am-list-line .am-list-content .question-list{
+    height: 100%;
+}
+.doctor-info .question-list-info{
+    width: 100%;
+}
+.doctor-inner .doctor-text{
+    font-size: .12rem;
+    margin: 5px 0;
+    line-height: .144rem;
+    position: relative;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #5f646e;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    white-space:normal;
+    -webkit-box-orient: vertical;
+}
+.doctor-inner .doctor-name{
+    position: relative;
+    display: -webkit-box;
+    padding-right: 3em;
+    height: .14rem;
+    color: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.doctor-inner .doctor-name span{
+    font-size: .12rem;
+    margin-left: .06rem;
+}
+.doctor-inner .doctor-name em{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: .14rem;
+    height: .14rem;
+    display: block;
+    padding: 0 .2em;
+    background: #d86776;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.doctor-inner .tag span{
+    display: inline-block;
+    margin: 0 .5em .2em 0;
+    color: #70b0b5;
+    white-space: nowrap;
+    border-radius: 1em;
+}
+.doctor-inner .dc-expert{
+    color: #888;
+    height: .28rem;
+    line-height: .144rem;
+}
+.question-list-info-money{
+    position: relative;
+}
+.question-list-info-money .online{
+    float: right;
+    position: absolute;
+    right: 0;
+    font-size: .12rem;
+    bottom: 0;
+    color: #67BB34;
+}
+.question-list-info-money .offline{
+    float: right;
+    position: absolute;
+    right: 0;
+    font-size: .12rem;
+    bottom: 0;
+    color: #ddd;
+}

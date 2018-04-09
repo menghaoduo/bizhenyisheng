@@ -1,0 +1,37 @@
+.detail-info{
+    padding: .15rem;
+    line-height: .21rem;
+}
+.detail-info img{
+    width: .7rem;
+    margin-left: .02rem;
+    margin-right: .02rem;
+}
+.list-type .am-list-item .am-list-line .am-list-extra{
+    color: #000;
+}
+.total{
+    text-align: right;
+    padding: .1rem .15rem .1rem 0;
+}
+.total strong{
+    font-size: 20px;
+    color: #d55768;
+    line-height: .21rem;
+    font-weight: 800;
+}
+.am-button{
+    font-size: .18rem;
+}
+.fuwu{
+    display: inline-block;
+}
+.fuwu .am-checkbox-inner{
+    width: .18rem;
+    height: .18rem;
+    margin-left: .05rem;
+}
+.fuwu .am-checkbox-agree-label{
+    font-size: .14rem;
+}
+

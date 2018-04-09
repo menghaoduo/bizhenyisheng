@@ -1,0 +1,15 @@
+.common:before{
+    font-size: 20px;
+    font-weight: lighter !important;
+}
+.my:before{
+    font-size: 20px;
+    font-weight: bolder !important;
+}
+.am-tab-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}

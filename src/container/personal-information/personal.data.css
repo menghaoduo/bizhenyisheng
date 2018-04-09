@@ -1,0 +1,13 @@
+.am-action-sheet-message,.am-action-sheet-title{
+    font-size: .16rem;
+}
+.am-action-sheet-title{
+    color: #888;
+}
+.perd-input{
+    border-radius: 5px;
+    border: #eee 1px solid;
+    min-height: .48rem;
+    height: .48rem;
+    font-size: .17rem;
+}

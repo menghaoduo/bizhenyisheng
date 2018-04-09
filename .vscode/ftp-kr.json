@@ -1,0 +1,16 @@
+{
+    "host": "210.33.124.87",
+    "username": "wangji",
+    "password": "123456",
+    "remotePath": "D:/build",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": true,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

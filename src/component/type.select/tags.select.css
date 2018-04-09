@@ -1,0 +1,63 @@
+.multi-foo-menu {
+    position: absolute;
+    z-index: 80 !important;
+    width: 100%;
+}
+
+.multi-menu-active .multi-top-nav-bar{
+    z-index: 80;
+}
+
+.am-flexbox.am-flexbox-align-stretch {
+    overflow: hidden;
+}
+.am-checkbox.am-checkbox-checked .am-checkbox-inner{
+    border-color: rgb(202, 45, 66);
+    background: rgb(202, 45, 66);
+}
+.am-button-primary{
+    background-color: rgb(202, 45, 66);
+}
+.select-item{
+    height: auto;
+    line-height: inherit;
+    padding: 0 1.5em;
+    border-bottom: solid 1px #eee
+}
+.select-item dl{
+    margin: 5px 0;
+}
+.select-item dt{
+    margin-bottom: 5px;
+}
+.select-item dd{
+    margin: 0;
+}
+.select-item dd a{
+    display: inline-block;
+    padding: .02rem .08rem;
+    margin: 0 .5em .5em 0;
+    font-size: .12rem;
+    border: #eee 1px solid;
+    border-radius: 3px;
+    white-space: nowrap;
+    color: #444;
+}
+.select-item .select-btn{
+    margin: 1em 0;
+    overflow: hidden;
+}
+.row .col-50 {
+    width: 46%;
+    margin-left: 4%;
+    float: left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button{
+    width: 100%;
+    height: .3rem;
+    line-height: .20rem;
+    font-size: .13rem;
+    border-radius:.08rem;
+}

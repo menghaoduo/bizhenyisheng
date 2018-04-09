@@ -1,0 +1,17 @@
+.foo-menu {
+    position: relative;
+    z-index: 1000 !important;
+}
+
+.menu-active .top-nav-bar{
+    z-index: 80;
+}
+
+.top-nav-bar {
+    position: relative;
+}
+
+.am-flexbox-item,.am-flexbox-item{
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}

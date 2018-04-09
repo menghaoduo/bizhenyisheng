@@ -1,0 +1,31 @@
+.multi-foo-menu {
+    position: absolute;
+    z-index: 80 !important;
+    width: 100%;
+}
+
+.multi-menu-active .multi-top-nav-bar{
+    z-index: 80;
+}
+
+.multi-top-nav-bar {
+    position: relative;
+
+}
+
+.am-flexbox.am-flexbox-align-stretch {
+    overflow: hidden;
+}
+.am-checkbox.am-checkbox-checked .am-checkbox-inner{
+    border-color: rgb(202, 45, 66);
+    background: rgb(202, 45, 66);
+}
+.am-button-primary{
+    background-color: rgb(202, 45, 66);
+}
+.am-menu .am-multi-select-btns {
+    height: .44rem;
+}
+.rank-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item:last-child{
+    padding-bottom: .44rem;
+}

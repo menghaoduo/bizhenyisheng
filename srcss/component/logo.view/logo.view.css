@@ -1,0 +1,13 @@
+.logo-view{
+    text-align: center;
+    padding: .51rem 0 0;
+}
+.logo-view img{
+    width: 1.2rem;
+}
+.logo-view .slogan {
+    margin: 5px 0 0;
+    font-size: 0.12rem;
+    line-height: 0.21rem;
+    color: #ccc;
+}

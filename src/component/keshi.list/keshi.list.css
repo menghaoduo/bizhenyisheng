@@ -1,0 +1,6 @@
+.am-grid.am-grid-square .am-grid-item:before {
+    padding-bottom: 0.93rem;
+}
+.index-gird .am-flexbox-item{
+    min-height: .93rem;
+}

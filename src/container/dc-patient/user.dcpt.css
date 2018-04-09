@@ -1,0 +1,14 @@
+.user-patient .am-list-line .am-list-content{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.user-patient .user-patient-child img{
+    border-radius: 100%;
+}
+.user-patient .user-patient-child{
+    vertical-align: middle;
+}
+.am-tabs *{
+    width: 100%;
+}

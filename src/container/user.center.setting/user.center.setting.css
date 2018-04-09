@@ -1,0 +1,13 @@
+.date2 .am-list-content span{
+    float: left;
+}
+.setting-consult .am-input-control input{
+    letter-spacing: 1px;
+    padding-left: .1rem;
+}
+.setting-consult .am-input-control input::-webkit-input-placeholder{
+    color: black;
+}
+.am-list-item .am-input-extra{
+    font-size: .15rem;
+}
