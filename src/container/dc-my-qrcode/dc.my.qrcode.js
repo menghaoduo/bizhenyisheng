@@ -6,22 +6,23 @@ import './dc.my.qrcode.css'
 )
 class DcMyQrcode extends React.Component{
     render(){
+        const {user} = this.props
         return (
             <div className='page'>
                 <div className='qrcode-wrap'>
                     <div className='qrcode-c'>
                         <div className='my-info'>
                             <div className='avatar-c'>
-                                <img src={this.props.user.header} alt=""/>
+                                <img src={user.header} alt=""/>
                             </div>
                             <div>
-                                <strong>{this.props.user.name}</strong>
-                                <p>{this.props.user.hospitalname}</p>
-                                <p>{this.props.user.departmentname}</p>
+                                <strong>{user.name}</strong>
+                                <p>{user.hospitalname}</p>
+                                <p>{user.departmentname}</p>
                             </div>
                         </div>
                         <div className='my-code'>
-                            {this.props.user.qrcode?<img src={`https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=`+this.props.user.qrcode} alt=""/>:<p style={{textAlign:'center',paddingTop:'1.2rem'}}>请联系客服进行处理!</p>}
+                            {user.qrcode?<img src={`https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=`+user.qrcode} alt=""/>:<p style={{textAlign:'center',paddingTop:'1.2rem'}}>请联系客服进行处理!</p>}
                         </div>
                         <p style={{textAlign:'center'}}>扫一扫上面的二维码图案<br/>
 

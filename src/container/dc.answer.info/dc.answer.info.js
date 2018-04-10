@@ -27,7 +27,6 @@ class DcAnswerInfo extends React.Component{
         this.handleClick = this.handleClick.bind(this);
     }
     componentDidMount(){
-        console.log(this.props.match.params.id)
         const data = JSON.parse(this.props.match.params.id)
         httpGet('/User/getUserInfoById?id='+data.userid).then(res=>{
             this.setState({
@@ -48,7 +47,7 @@ class DcAnswerInfo extends React.Component{
             }
             if(res.data.other.length){
                 httpGet('/Qa/getOrderById?code='+res.data.other[0].id).then(re=>{
-                    console.log('order2',re)
+                    console.log('order2')
                     this.setState({
                         order2:re.data.data,
                         toId:re.data.data.id
@@ -60,7 +59,7 @@ class DcAnswerInfo extends React.Component{
                     }
                     if(re.data.other.length){
                         httpGet('/Qa/getOrderById?code='+re.data.other[0].id).then(r=>{
-                            console.log('order3',r)
+                            console.log('order3')
                             this.setState({
                                 order3:r.data.data,
                                 toId:r.data.data.id

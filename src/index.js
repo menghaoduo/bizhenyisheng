@@ -6,11 +6,11 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import { BrowserRouter, Route} from 'react-router-dom'
 import Dashboard from './component/dashboard.link/dashboard.link'
-import Weixin from './Authentication'
 import RouteLink from './route/route'
 import { CookiesProvider } from 'react-cookie';
 import './common.css'
 import './config'
+import UserData from "./userData";
 const store = createStore(reducers, compose(
 	applyMiddleware(thunk),
 	//谷歌浏览器redux调试工具的启用
@@ -21,9 +21,7 @@ ReactDom.render(
 		<CookiesProvider>
 			<BrowserRouter>
 				<div>
-					<Weixin/>
-                    {/*<Route component={KsLink}/>*/}
-                    {/*<RouteLink/>*/}
+					<UserData/>
 					<Route component={Dashboard} />
 					<RouteLink/>
 				</div>

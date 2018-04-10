@@ -6,13 +6,12 @@ import GetDoctor from '../../container/get.doctor/get.doctor'
 import AnswerProblem from '../../container/dc-answer-problem/answer.problem'
 import LookProblem from '../../container/user-look-problem/look.problem'
 import UserMyself from '../../container/user.center/user.center'
-
 @connect(
-    state => state
+    state=>state.user
 )
 class Dashboard extends React.Component {
     render() {
-        const {isDoctor} = this.props.user
+        const {isDoctor} = this.props
         const navList = [
             {
                 path: '/get-doctor',

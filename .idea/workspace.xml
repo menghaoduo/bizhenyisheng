@@ -2,201 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3f72a9d-a015-491e-92f8-4c89a5497b5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.list/ks4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/logo.view/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/share.list/ask5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/user-share-list/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/wenzhen.list/ico1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/wenzhen.list/ico2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/wenzhen.list/ico3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-patient/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/get.doctor/ks4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/share.question/ask5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.link/ks1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.link/ks2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.link/ks3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.link/ks4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/logo.view/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/user.myself.card/ask5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenti.list/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenzhen.list/ico1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenzhen.list/ico2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenzhen.list/ico3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/ks1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/bizhenyisheng.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.vscode/ftp-kr.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.vscode/ftp-kr.sync.cache.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.vscode/settings.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/paths.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/polyfills.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/start.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authentication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/answer.list/answer.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/answer.list/answer.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/bar/bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/bar/bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/doctor-fast-list/fast.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/drawer.help/drawer.help.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/drawer.help/drawer.help.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.doctor.list/keshi.doctor.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.doctor.list/keshi.doctor.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.list/keshi.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/keshi.list/keshi.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/logo.view/logo.view.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/logo.view/logo.view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/nav.bar/nav.bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/nav.bar/navlink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/search/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/search/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/share.list/share.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/all.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/all.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/city.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/city.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/office.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/rank.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/rank.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/tags.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/type.select/tags.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/user-share-list/hot.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/user-share-list/wenti.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/user.star/user.star.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/user.star/user.star.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/wenzhen.list/wenzhen.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/wenzhen.list/wenzhen.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-answer-problem/answer.problem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-question-list/dc.answer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-work-info/dc.work.info.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc-work-info/dc.work.info.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/get.doctor/get.doctor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/get.doctor/get.doctor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.all/keshi.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.call/keshi.doctor.call.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.call/keshi.doctor.call.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.catamnestic/keshi.doctor.catamnestic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.catamnestic/keshi.doctor.catamnestic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.home/keshi.doctor.home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.home/keshi.doctor.home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.pay/keshi.doctor.pay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor.pay/keshi.doctor.pay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor/keshi.doctor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/keshi.doctor/keshi.doctor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/personal-information/personal.data.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/personal-information/personal.data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/personal-phone-auth/phone.auth.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/personal-phone-auth/phone.auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/share.question/share.question.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-become.dcEnd/become.doctor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-fast-consultation/fast.doctor.pay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-foregone.problem/user.lookhistory.propblem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-look-problem/look.problem.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-look-problem/look.problem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-pay-result/result.article.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-question-info/user.question.info.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user-question-list/user.question.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user.center.setting/user.center.setting.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user.center.setting/user.center.setting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user.center/user.center.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user.center/user.center.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/container/user.question.closely/user.question.closely.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/allKeshiEntrance.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/user.help.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/user.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/user.select.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/route/keshi.link/keishi.link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/route/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/route/user.myself.link/user.myself.link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/fonts/ionicfont.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/fonts/ionicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/mock/mock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/until.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/dashboard.link/dashboard.link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/drawer.help/drawer.help.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/drawer.help/drawer.help.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.link/keishi.link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.list/keshi.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/keshi.list/keshi.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/logo.view/logo.view.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/logo.view/logo.view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/nav.bar/nav.bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/nav.bar/navlink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/search/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/search/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/all.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/all.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/city.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/city.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/office.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/rank.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/rank.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/ssss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/tags.select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/type.select/tags.select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/user.myself.card/user.myself.card.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/user.myself.card/user.myself.card.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenti.list/wenti.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenti.list/wenti.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenzhen.list/wenzhen.list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/component/wenzhen.list/wenzhen.list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/answer.problem/answer.problem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/get.doctor/get.doctor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/get.doctor/get.doctor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/look.problem/look.problem.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/look.problem/look.problem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/user.myself/use.myself.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/container/user.myself/user.myself.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/reducer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/redux/user.help.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/redux/user.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/redux/user.select.redux.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/city.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/fonts/ionicfont.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srcss/static/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/userData.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Authentication.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/container/dc-patient/avatar.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/api.js" afterPath="$PROJECT_DIR$/src/api/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js" afterPath="$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js" afterPath="$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.js" afterPath="$PROJECT_DIR$/src/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.js" afterPath="$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js" afterPath="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js" afterPath="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js" afterPath="$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -213,11 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="share.question.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/container/share.question/share.question.js">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/api/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -225,11 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get.doctor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/container/get.doctor/get.doctor.js">
+      <file leaf-file-name="user.dcpt.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="become.doctor.first.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -249,32 +89,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dc.answer.info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js">
+      <file leaf-file-name="dashboard.link.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="25" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="become.doctor.first.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -294,31 +116,11 @@
       <file leaf-file-name="keshi.list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/keshi.list/keshi.list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
+            <state relative-caret-position="1565">
               <caret line="124" column="10" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Authentication.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authentication.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -377,10 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/container/become.doctor.first/become.doctor.first.js" />
-        <option value="$PROJECT_DIR$/src/container/user.question/user.question.js" />
-        <option value="$PROJECT_DIR$/src/container/dc.my.qrcode/dc.my.qrcode.html" />
-        <option value="$PROJECT_DIR$/src/route/user.myself.link/user.myself.link.js" />
         <option value="$PROJECT_DIR$/src/container/dc.my.qrcode/dc.my.qrcode.js" />
         <option value="$PROJECT_DIR$/src/container/dc.my.qrcode/dc.my.qrcode.css" />
         <option value="$PROJECT_DIR$/src/container/user.question.info/user.question.info.js" />
@@ -400,10 +198,7 @@
         <option value="$PROJECT_DIR$/src/container/personal-information/personal.data.js" />
         <option value="$PROJECT_DIR$/src/container/dc-work-info/dc.work.info.css" />
         <option value="$PROJECT_DIR$/src/component/keshi.doctor.list/keshi.doctor.list.js" />
-        <option value="$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js" />
         <option value="$PROJECT_DIR$/src/container/keshi.doctor.home/keshi.doctor.home.js" />
-        <option value="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js" />
-        <option value="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js" />
         <option value="$PROJECT_DIR$/src/container/user-question-info/user.question.info.js" />
         <option value="$PROJECT_DIR$/src/container/keshi.doctor.catamnestic/keshi.doctor.catamnestic.js" />
         <option value="$PROJECT_DIR$/src/container/user.question.closely/user.question.closely.js" />
@@ -413,21 +208,28 @@
         <option value="$PROJECT_DIR$/src/container/dc-answer-problem/answer.problem.js" />
         <option value="$PROJECT_DIR$/src/component/doctor-fast-list/fast.list.js" />
         <option value="$PROJECT_DIR$/src/component/type.select/office.select.js" />
-        <option value="$PROJECT_DIR$/src/config.js" />
         <option value="$PROJECT_DIR$/src/static/mock/city.js" />
         <option value="$PROJECT_DIR$/src/component/type.select/city.select.js" />
         <option value="$PROJECT_DIR$/src/container/dc-work-info/dc.work.info.js" />
         <option value="$PROJECT_DIR$/src/component/type.select/tags.select.css" />
         <option value="$PROJECT_DIR$/src/component/type.select/tags.select.js" />
         <option value="$PROJECT_DIR$/src/container/share.question/share.question.js" />
-        <option value="$PROJECT_DIR$/src/Authentication.js" />
-        <option value="$PROJECT_DIR$/src/api/api.js" />
         <option value="$PROJECT_DIR$/src/container/get.doctor/get.doctor.js" />
         <option value="$PROJECT_DIR$/src/component/keshi.list/keshi.list.js" />
         <option value="$PROJECT_DIR$/src/container/user-become.dcEnd/become.doctor.js" />
         <option value="$PROJECT_DIR$/src/container/user-fast-consultation/fast.doctor.pay.js" />
         <option value="$PROJECT_DIR$/src/common.css" />
+        <option value="$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js" />
+        <option value="$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js" />
         <option value="$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js" />
+        <option value="$PROJECT_DIR$/src/config.js" />
+        <option value="$PROJECT_DIR$/src/Authentication.js" />
+        <option value="$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js" />
+        <option value="$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.js" />
+        <option value="$PROJECT_DIR$/src/userData.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js" />
+        <option value="$PROJECT_DIR$/src/api/api.js" />
       </list>
     </option>
   </component>
@@ -443,10 +245,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
+    <option name="x" value="59" />
     <option name="y" value="23" />
     <option name="width" value="1350" />
-    <option name="height" value="843" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -503,6 +305,13 @@
               <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard.link" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -510,47 +319,19 @@
               <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="dc.answer.info" type="462c0819:PsiDirectoryNode" />
+              <item name="dc-patient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="user-become-dcFirst" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="user-fast-consultation" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-              <item name="keshi.link" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-              <item name="user.myself.link" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bizhenyisheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bizhenyisheng" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -575,19 +356,19 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/build" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/container" />
+      <recent name="$PROJECT_DIR$/src/container/pesonal.data" />
+      <recent name="$PROJECT_DIR$/src/container/keshi.doctor.call.pay" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api" />
       <recent name="$PROJECT_DIR$/src/container/get.doctor" />
       <recent name="$PROJECT_DIR$/src/container/share.question" />
       <recent name="$PROJECT_DIR$/src/component/keshi.list" />
       <recent name="$PROJECT_DIR$/src/container/user.question.info" />
-      <recent name="$PROJECT_DIR$/src/container/user.dcpt" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/container" />
-      <recent name="$PROJECT_DIR$/src/container/pesonal.data" />
-      <recent name="$PROJECT_DIR$/src/container/keshi.doctor.call.pay" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -672,12 +453,12 @@
       <workItem from="1522376584514" duration="8670000" />
       <workItem from="1522390652639" duration="19026000" />
       <workItem from="1522809808722" duration="5061000" />
-      <workItem from="1523238056352" duration="2827000" />
+      <workItem from="1523238056352" duration="9454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="964602000" />
+    <option name="totallyTimeSpent" value="971229000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -689,11 +470,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="23" width="1350" height="843" extended-state="0" />
+    <frame x="59" y="23" width="1350" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18359669" sideWeight="0.8061497" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18359669" sideWeight="0.8061497" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814527" sideWeight="0.50296295" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1483376" sideWeight="0.49703702" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17195208" sideWeight="0.52792794" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33203632" sideWeight="0.49703702" order="4" side_tool="false" content_ui="tabs" />
@@ -705,7 +488,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14873035" sideWeight="0.49703702" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -725,45 +507,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/container/keshi.doctor.pay/keshi.doctor.pay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2489">
-          <caret line="166" column="34" lean-forward="false" selection-start-line="166" selection-start-column="34" selection-end-line="166" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/personal-phone-auth/phone.auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/keshi.doctor/keshi.doctor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/user-foregone.problem/user.lookhistory.propblem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/dc-question-list/dc.answer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -774,17 +521,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="57" lean-forward="false" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/keshi.doctor.home/keshi.doctor.home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,6 +535,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="102" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -806,6 +552,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2970">
           <caret line="203" column="242" lean-forward="false" selection-start-line="203" selection-start-column="242" selection-end-line="203" selection-end-column="242" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="53" column="88" lean-forward="false" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/user.question.closely/user.question.closely.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -882,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/dc-answer-problem/answer.problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/doctor-fast-list/fast.list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -900,6 +633,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="127" column="59" lean-forward="false" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+            <marker date="1522808111421" expanded="true" signature="571:12747" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="595:1149" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="637:1143" ph="{&quot;username&quot;: ''...}" />
+            <marker date="1522808111421" expanded="true" signature="1171:1449" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1259:1443" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1295:1433" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1327:1395" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1490:1846" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1589:1840" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1628:1830" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1660:1792" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1880:2240" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="1976:2234" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2016:2224" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2048:2186" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2271:2966" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2793:2893" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2898:2949" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="2979:12745" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="3187:12729" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3240:5805" ph="&lt;List/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3267:3473" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3495:3501" ph="/*...*/" />
+            <marker date="1522808111421" expanded="true" signature="3523:4198" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3578:4171" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3720:4140" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3781:4105" ph="&lt;Item/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="3824:4065" ph="&lt;select/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="4220:4228" ph="/*...*/" />
+            <marker date="1522808111421" expanded="true" signature="4250:5556" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="4305:5529" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="4473:5498" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="4534:5463" ph="&lt;Picker/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="4929:5300" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="4989:5257" ph="{&quot;cityValue&quot;: e...}" />
+            <marker date="1522808111421" expanded="true" signature="5577:5781" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="5822:12490" ph="&lt;List/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="5869:6031" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="6052:6216" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="6238:6246" ph="/*...*/" />
+            <marker date="1522808111421" expanded="false" signature="6268:7246" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="6323:7219" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="6491:7188" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="6552:7153" ph="&lt;Picker/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="7269:7278" ph="/*...*/" />
+            <marker date="1522808111421" expanded="false" signature="7300:8075" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="7355:8048" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="7500:8017" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="7561:7982" ph="&lt;Item/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="7604:7942" ph="&lt;select/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8097:8108" ph="/*...*/" />
+            <marker date="1522808111421" expanded="false" signature="8130:8969" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8185:8942" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8330:8911" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8391:8876" ph="&lt;Item/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8434:8836" ph="&lt;select/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="8991:9001" ph="/*...*/" />
+            <marker date="1522808111421" expanded="true" signature="9023:10152" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="9078:10125" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="9246:10094" ph="&lt;div/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="9307:10059" ph="&lt;DatePicker/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="9779:9892" ph="{...}" />
+            <marker date="1522808111421" expanded="true" signature="10173:10457" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="10478:10693" ph="&lt;InputItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="10714:10998" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="11019:11291" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="11312:11575" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="11596:11880" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="11901:12170" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="12191:12466" ph="&lt;TextareaItem/&gt;" />
+            <marker date="1522808111421" expanded="true" signature="12547:12670" ph="&lt;WingBlank/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -924,6 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -973,35 +781,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/share.question/share.question.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1016,16 +801,6 @@
     <entry file="file://$PROJECT_DIR$/src/component/keshi.list/ks4.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/keshi.list/keshi.list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="124" column="10" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/lrz/dist/lrz.all.bundle.js">
@@ -1051,10 +826,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/get.doctor/get.doctor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="0">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1067,22 +842,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/user-become.dcEnd/become.doctor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/route/user.myself.link/user.myself.link.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,26 +862,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js">
+    <entry file="file://$PROJECT_DIR$/src/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common.css">
+    <entry file="file://$PROJECT_DIR$/src/component/keshi.list/keshi.list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="1565">
+          <caret line="124" column="10" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/keshi.doctor.one/keshi.doctor.one.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/user.redux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/dashboard.link/dashboard.link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/dc.answer.info/dc.answer.info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/dc-answer-problem/answer.problem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/dc-my-qrcode/dc.my.qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="105" lean-forward="false" selection-start-line="24" selection-start-column="105" selection-end-line="24" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/user-become.dcEnd/become.doctor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/user-become-dcFirst/become.doctor.first.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+        <state relative-caret-position="481">
+          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/dc-patient/user.dcpt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="52" />
           <folding />
         </state>
       </provider>

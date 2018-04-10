@@ -10,8 +10,11 @@ axios.interceptors.request.use(function (config) {
 	return config
 })
 axios.interceptors.response.use(function (config) {
-    console.log(config.url,config.data)
-    if(config.data.code!==401||config.data.code!==200){
+    console.log(config.data)
+    if(config.data.code===401){
+        window.location.href = config.data.data;
+    }
+    if(config.data.code!==200){
         Toast.info('错误,请与客服联系！')
     }
 	Toast.hide()

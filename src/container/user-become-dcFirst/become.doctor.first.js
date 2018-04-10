@@ -1,6 +1,6 @@
 import React from 'react'
 import {List,Button,WingBlank,WhiteSpace,Drawer,Radio,SearchBar,Toast} from 'antd-mobile'
-import {httpGet} from '../../config'
+import {AllHospital,Department1,HospitalName} from "../../api/api";
 import './become.doctor.first.css'
 import {withRouter} from 'react-router-dom'
 @withRouter
@@ -22,13 +22,13 @@ class BecomeDoctorFirst extends React.Component{
         }
     }
     componentDidMount(){
-        httpGet('/Department/1').then(res=>{
+        Department1.then(res=>{
             //科室数据
             this.setState({
                 dataUpload:res.data.data
             })
         })
-        httpGet('/getHospital').then(res=>{
+        AllHospital.then(res=>{
             //医院数据
             this.setState({
                 hospitalList:res.data.data.list
@@ -53,7 +53,7 @@ class BecomeDoctorFirst extends React.Component{
     }
     //输入医院搜索
     onHospitalChange =value=>{
-        httpGet('/getHospital?name='+value).then(res=>{
+        HospitalName(value).then(res=>{
             console.log(res)
             this.setState({
                 hospitalList:res.data.data.list
