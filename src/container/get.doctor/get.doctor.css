@@ -13,3 +13,17 @@
 .index-ks{
     min-height: .93rem;
 }
+.logo-view{
+    text-align: center;
+    padding: .51rem 0 0;
+    min-height: .82rem;
+}
+.logo-view img{
+    width: 1.2rem;
+}
+.logo-view .slogan {
+    margin: .05rem 0 0;
+    font-size: 0.12rem;
+    line-height: 0.21rem;
+    color: #ccc;
+}

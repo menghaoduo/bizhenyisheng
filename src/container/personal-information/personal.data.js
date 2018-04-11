@@ -3,8 +3,8 @@ import {List,InputItem,Button,WhiteSpace,Modal,DatePicker,WingBlank,Toast} from 
 import {withRouter} from 'react-router-dom'
 import './personal.data.css'
 import {connect}  from 'react-redux'
-import {httpPost} from '../../config'
-import {getUserType} from "../../redux/user.redux";
+import {DoctorPerfectmaterial} from "../../api/api"
+import {getUserType} from "../../redux/user.redux"
 @connect(
     state=>state.user,
     {getUserType}
@@ -19,7 +19,8 @@ class PersonData extends React.Component{
             visible: false,
             modal:false,
             bornDate:null
-        };
+        }
+        this.onClose = this.onClose.bind(this)
     }
     componentWillMount(){
         this.props.getUserType()
@@ -33,9 +34,9 @@ class PersonData extends React.Component{
     }
     //修改姓名提交点击事件
     postNameButton= ()=>{
-        httpPost('/User/DoctorPerfectmaterial',{username:this.state.username}).then(res=>{
+        DoctorPerfectmaterial({username:this.state.username}).then(res=>{
             if(res.data.code===200){
-                Toast.info('修改成功!',1)
+                Toast.info('姓名修改成功!',1)
                 this.onClose('modal')
             }
         })
@@ -92,7 +93,7 @@ class PersonData extends React.Component{
                         value={this.state.bornDate?new Date(this.state.bornDate):null}
                         onChange={date => {
                             this.setState({ bornDate:date })
-                            httpPost('/User/DoctorPerfectmaterial',{starttime:date}).then(res=>{
+                            DoctorPerfectmaterial({starttime:date}).then(res=>{
                                 console.log(res)
                             })
                         }}

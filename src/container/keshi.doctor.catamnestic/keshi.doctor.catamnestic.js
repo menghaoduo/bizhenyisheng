@@ -70,7 +70,6 @@ class KeshiDoctorCatamnestic extends React.Component{
         }
         const djdcid=JSON.parse(this.props.match.params.data).dcid
         httpPost('/Qa/addProblem',{patient:{menzhennum:orderNum,name:name,bedNum:bedNum,date:date.toLocaleString()},problem:problemContent,is_urgent:0,doctorid:djdcid,typeid:3,share:share,money:1},{imgurl:Array.from(new Set(imgArr))}).then(res=>{
-            console.log(res)
             if (res.data.code===200){
                 this.props.history.push('/dcpay/'+JSON.stringify({id:res.data.data.id}))
             }
@@ -83,7 +82,7 @@ class KeshiDoctorCatamnestic extends React.Component{
             imgArr:[]
         },()=>{
             files.map((v,i)=>{
-                lrz(files[i].url,{quality:0.3})
+                return lrz(files[i].url,{quality:0.3})
                     .then((rst)=>{
                         // 处理成功会执行
                         this.state.imgArr.push(rst.base64)

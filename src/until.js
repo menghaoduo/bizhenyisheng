@@ -1,14 +1,22 @@
+/*
+公用方法
+ */
 
-//单选框选择函数 selects:children
-export const radio = (ref,id,val)=>{
-    console.log(ref,id,val)
-    for (var i=0;i<this.refs[ref].children3.length;i++){
-        if (this.refs[ref].children3[i].selected) {
-            this.setState({
-                [id]: parseInt(this.refs[ref].children3[i].value),
-                [val]: this.refs[ref].children3[i].innerHTML
-            })
-            return
+export const HandleImage = (that,f) =>{
+    console.log(that.state,f)
+    let _this = that
+    that.setState({
+        files:f
+    })
+}
+
+
+//select(option)选框
+//that:组件的this.refs属性  args:{ref} 是哪个ref
+export const radio = (that,args)=>{
+    for (let i=0;i<that[args.ref].children.length;i++){
+        if (that[args.ref].children[i].selected) {
+            return that[args.ref].children[i]
         }
     }
 }

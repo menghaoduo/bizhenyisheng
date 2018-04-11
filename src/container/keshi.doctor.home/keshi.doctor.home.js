@@ -1,11 +1,13 @@
 import React from 'react'
 import {Flex,WhiteSpace,Card,Modal,Toast} from 'antd-mobile'
-import './keshi.doctor.home.css'
-import Star from '../../component/user.star/user.star'
-import ShareList from '../../component/share.list/share.list'
-import {httpGet,httpPost} from "../../config"
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
+import './keshi.doctor.home.css'
+import Star from '../../component/star/user.star'
+import ShareList from '../../component/share.list/share.list'
+import {AddFollow,LookDoctorDetailt,Afterverification} from "../../api/api"
+
+
 const alert = Modal.alert;
 @connect(
     state=>state.user
@@ -16,12 +18,12 @@ class KeshiDoctorHome extends React.Component{
         super(props)
         this.state={
             data:{},
-            transfer:JSON.parse(this.props.match.params.data),
-            isfllow:false
+            isfollow:false
         }
+        this.doctorid = JSON.parse(this.props.match.params.data).id
     }
     componentDidMount(){
-        httpGet('/User/lookDoctorDetailt?id='+this.state.transfer.id).then(res=>{
+        LookDoctorDetailt(this.doctorid).then(res=>{
             //拿到医生的数据
             this.setState({
                 data:res.data.data,
@@ -32,16 +34,16 @@ class KeshiDoctorHome extends React.Component{
     //关注医生
     addfollow =()=>{
         this.setState({
-            isfllowL:true
+            isfollow:true
         })
-        httpPost('/User/addfollow?doctorid='+this.state.transfer.id).then(res=>{
+        AddFollow(this.doctorid).then(res=>{
             if(res.data.code===200){
                 Toast.info('成功关注医生!',1)
             }
         })
     }
     render(){
-        const data = this.state.data
+        const {data} = this.state
         return (
             <div>
                 <nav className='tabbar-bottom'>
@@ -59,12 +61,12 @@ class KeshiDoctorHome extends React.Component{
                                 },
                             ])
                         else
-                            this.props.history.push('/dccall/'+JSON.stringify({money:data.money,dcid:this.state.transfer.id}))
+                            this.props.history.push('/dccall/'+JSON.stringify({money:data.money,dcid:this.doctorid}))
                     }}>
                         <span className='tabbar-item-label'>点名咨询 ¥{data.money}</span>
                     </div>
                     <div className='tabbar-item ask-zh' onClick={()=>{
-                        httpGet('/Qa/Afterverification?doctorid='+this.state.transfer.id).then(res=>{
+                        Afterverification(this.doctorid).then(res=>{
                             if(res.data.code===200){
                                 if(this.props.tel===null)
                                     alert('毕臻医生', '请完善信息！', [
@@ -97,7 +99,7 @@ class KeshiDoctorHome extends React.Component{
                                 {data.username}
                             </div>
                             <p>{data.departmentname} {data.job}</p>
-                            <p>{data.hospitalname} 三甲医院</p>
+                            <p>{data.hospitalname}</p>
                             <div className='dc-btn'>
                                 {this.state.isfollow?<div className='follow' style={{backgroundColor:'white',color:'#78cdd4'}}>已关注</div>:<div className='follow' onClick={this.addfollow}>加关注</div>}
                                 <div className='ion-ios-heart'> 送心意</div>

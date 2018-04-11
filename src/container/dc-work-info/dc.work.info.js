@@ -1,13 +1,13 @@
 import React from 'react'
 import { List,InputItem, TextareaItem ,Picker,Button,WhiteSpace,WingBlank,Toast,DatePicker} from 'antd-mobile'
 import './dc.work.info.css'
-import {httpPost} from "../../config"
+import {DoctorPerfectmaterial} from "../../api/api";
 import { connect } from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {getUserType} from "../../redux/user.redux"
 import {city} from '../../static/mock/mock'
 import {titleappellation} from '../../static/mock/mock'
-//城市数据
+import {radio} from "../../until";
 const Item = List.Item
 @connect(
     state=>state.user,
@@ -30,7 +30,7 @@ class DcWorkInfo extends React.Component{
             sex:'',
             city:'',
             province:'',
-            dcSystemName:'',
+            dcSystemName: '',
             dcSystem:'',
             starttime:null,
             address:'',
@@ -39,51 +39,15 @@ class DcWorkInfo extends React.Component{
             titleappellation:[],
         }
     }
-    //性别
-    sex=()=>{
-        const dcsex = this.refs.sex.children;
-        for (var i=0;i<dcsex.length;i++){
-            if (dcsex[i].selected){
-                this.setState({
-                    sex:parseInt(dcsex[i].value)
-                })
-                return
-            }
-        }
-    }
-    //医学分类单选框方法   下面是复选框
-    system=()=>{
-        const dcSystem = this.refs.dcSystem.children;
-        for (var i=0;i<dcSystem.length;i++){
-            if (dcSystem[i].selected){
-                this.setState({
-                    dcSystem:parseInt(dcSystem[i].value),
-                    dcSystemName:dcSystem[i].innerHTML
-                })
-                return
-            }
-        }
-    }
-    //科室分类  儿童 成人
-    depart=()=>{
-        const dcdepart = this.refs.depart.children
-        for (var i=0;i<dcdepart.length;i++){
-            if (dcdepart[i].selected) {
-                this.setState({
-                    appellationid: parseInt(dcdepart[i].value),
-                    appellation: dcdepart[i].innerHTML
-                })
-                return
-            }
-        }
-    }
     //提交
     onHandlePost=()=>{
         const {titleappellation,appellationid,appellation,username,introduction,expertise,achievements,major,learning,winning,autograph,sex,city,province,dcSystemName,starttime,address,dcSystem}=this.state
-        httpPost('/User/DoctorPerfectmaterial',{titleappellation:titleappellation[0],appellationid,appellation,starttime,classid:dcSystem,classname:dcSystemName,province,sex,city,username,introduction,expertise,autograph,achievements,major,learning,winning,address}).then(res=>{
+        DoctorPerfectmaterial({titleappellation:titleappellation[0],appellationid,appellation,starttime,classid:dcSystem,classname:dcSystemName,province,sex,city,username,introduction,expertise,autograph,achievements,major,learning,winning,address}).then(res=>{
             if(res.data.code===200){
-                this.props.history.goBack()
-                this.props.getUserType()
+                Toast.info('更新成功！',1,()=>{
+                    this.props.history.goBack()
+                    this.props.getUserType()
+                })
             }else {
                 Toast.info('更新失败！')
             }
@@ -106,7 +70,12 @@ class DcWorkInfo extends React.Component{
                             <div className="item-title label">性别</div>
                             <div className="item-input">
                                 <Item>
-                                    <select defaultValue={sex} ref='sex' onChange={this.sex}>
+                                    <select defaultValue={sex} ref='sex' onChange={()=>{
+                                        let sex = radio(this.refs,{ref:'sex'})
+                                        this.setState({
+                                           sex:sex.value
+                                        })
+                                    }}>
                                         <option value="1">男</option>
                                         <option value="2">女</option>
                                     </select>
@@ -137,6 +106,7 @@ class DcWorkInfo extends React.Component{
                             </div>
                         </div>
                     </div>
+                    {/*具体地址*/}
                     <InputItem
                         clear
                         placeholder={address?address:"请输入具体地址！"}
@@ -173,13 +143,19 @@ class DcWorkInfo extends React.Component{
                             </div>
                         </div>
                     </div>
-                     {/*k科室分类*/}
+                     {/*科室分类*/}
                     <div className="item-content">
                         <div className="item-inner am-list-line" >
                             <div className="item-title label" >业务擅长</div>
                             <div className="item-input">
                                 <Item>
-                                    <select defaultValue={appellationid} ref='depart' onChange={this.depart}>
+                                    <select defaultValue={appellationid} ref='depart' onChange={()=>{
+                                        let dcdepart = radio(this.refs,{ref:'depart'})
+                                        this.setState({
+                                            appellationid: dcdepart.value,
+                                            appellation: dcdepart.innerHTML
+                                        })
+                                    }}>
                                         <option value="0">成人疾病</option>
                                         <option value="1">儿童疾病</option>
                                         <option value="2">成人和儿童疾病</option>
@@ -194,7 +170,13 @@ class DcWorkInfo extends React.Component{
                             <div className="item-title label" >医学分类</div>
                             <div className="item-input">
                                 <Item>
-                                    <select defaultValue={classid} ref='dcSystem' onChange={this.system}>
+                                    <select defaultValue={classid} ref='dcSystem' onChange={()=>{
+                                        let dcSystem = radio(this.refs,{ref:'dcSystem'})
+                                        this.setState({
+                                            dcSystem:dcSystem.value,
+                                            dcSystemName:dcSystem.innerHTML
+                                        })
+                                    }}>
                                         <option value="0">西医</option>
                                         <option value="1">中医</option>
                                         <option value="2">中西医结合</option>
@@ -210,7 +192,7 @@ class DcWorkInfo extends React.Component{
                             <div className="item-title label">工作时间</div>
                             <div className="item-input">
                                 <DatePicker
-                                    mode="month"
+                                    mode="date"
                                     title="选择日期"
                                     extra={starttime?starttime.substr(0,7):null}
                                     minDate={new Date(Date.now()-2.524608e12)}

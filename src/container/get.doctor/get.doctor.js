@@ -1,6 +1,5 @@
 import React from 'react'
 import {NoticeBar,WhiteSpace} from 'antd-mobile'
-import LogoView from '../../component/logo.view/logo.view'
 import Search from '../../component/search/search'
 import KsList from '../../component/keshi.list/keshi.list'
 import WzList from '../../component/wenzhen.list/wenzhen.list'
@@ -8,12 +7,36 @@ import DrawerHelp from '../../component/drawer.help/drawer.help'
 import FastLsit from '../../component/doctor-fast-list/fast.list'
 import ShareList from  '../../component/share.list/share.list'
 import {connect} from 'react-redux'
+import logo from './logo.png'
 import './get.doctor.css'
-
+import {httpPost} from "../../config";
+let localId;
 @connect(
     state=>state
 )
 class GetDoctor extends React.Component{
+    start=()=>{
+        httpPost('/WeixinJsConfig?url=http://bzys.caa.edu.cn:9000/get-doctor').then(res=>{
+                window.wx.config({
+                    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: res.data.data.appId, // 必填，公众号的唯一标识
+                    timestamp:res.data.data.timestamp , // 必填，生成签名的时间戳
+                    nonceStr: res.data.data.nonceStr, // 必填，生成签名的随机串
+                    signature: res.data.data.signature,// 必填，签名
+                    jsApiList: ['startRecord'] // 必填，需要使用的JS接口列表
+                });
+            }
+        )
+        window.wx.ready(function(){window.wx.startRecord()})
+    }
+    stop=()=>{
+        window.wx.ready(function(){window.wx.stopRecord({
+            success: function (res) {
+                alert(res)
+                localId = res.localId;
+            }
+        })})
+    }
     render(){
         const all = {allkeshi:true}
         const getDoctorList ={
@@ -33,7 +56,14 @@ class GetDoctor extends React.Component{
         return (
             <div style={{background:'white'}}>
                 {this.props.user.isDoctor?<NoticeBar marqueeProps={{loop:true}} mode="link" onClick={() => alert('1')}>你有1个患者的问题还未回答，点击这里去回答</NoticeBar> :null}
-                <LogoView />
+                <div className='logo-view'>
+                    <img src={logo} alt=""/>
+                    <div className='slogan'>
+                        我们只提供有价值的健康咨询
+                        <br/>
+                        （三甲医院中高级职称临床医生）
+                    </div>
+                </div>
                 <WhiteSpace />
                 <Search />
                 <div className='index-ks' ><KsList bool={all} /></div>
@@ -44,6 +74,8 @@ class GetDoctor extends React.Component{
                 {this.props.user.isDoctor?<FastLsit/>:null}
                 <WhiteSpace style={{backgroundColor:'#f5f5f9'}}/>
                 {this.props.help.getDoctor?<DrawerHelp helpList={getDoctorList}/>:null}
+
+                <div onTouchStart={this.start} onTouchEnd={this.stop}>录音</div>
             </div>
         )
     }

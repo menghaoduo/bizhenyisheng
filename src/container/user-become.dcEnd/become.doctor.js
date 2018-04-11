@@ -1,6 +1,6 @@
 import React from 'react'
 import {List,ImagePicker,WhiteSpace,WingBlank,Button,Toast} from 'antd-mobile'
-import {httpPost} from '../../config'
+import {UploadAuthentication} from "../../api/api"
 import lrz from 'lrz'
 import {connect} from 'react-redux'
 @connect(state=>state.user)
@@ -18,13 +18,7 @@ class BecomeDoctor extends React.Component{
             imgArr3:[],//其他证明材料
             imgArr4:[],//医师资格证
             imgArr5:[],//职称等级
-            firstData:{}
         }
-    }
-    componentDidMount(){
-        this.setState({
-            firstData:JSON.parse(this.props.match.params.data)
-        })
     }
     //上传执业医师证书
     onChange = (files) => {
@@ -33,16 +27,13 @@ class BecomeDoctor extends React.Component{
             imgArr:[]
         },()=>{
             files.map((v,i)=>{
-                lrz(files[i].url, {quality:0.3})
+                return lrz(files[i].url, {quality:0.3})
                     .then((rst)=>{
                         // 处理成功会执行
                         this.state.imgArr.push(`${rst.base64}@certi1`)
                     })
             })
         })
-        // this.state.files.map(v => {
-        //     this.state.imgArr.push(`${v.url}@certi1`)
-        // })
     }
     //上传身份证正面
     onChange2 = (files) => {
@@ -51,16 +42,13 @@ class BecomeDoctor extends React.Component{
             imgArr2:[]
         },()=>{
             files.map((v,i)=>{
-                lrz(files[i].url, {quality:0.3})
+                return lrz(files[i].url, {quality:0.3})
                     .then((rst)=>{
                         // 处理成功会执行
                         this.state.imgArr2.push(`${rst.base64}@cardfront`)
                     })
             })
         });
-        // this.state.files2.map(v=>{
-        //     this.state.imgArr2.push(`${v.url}@cardfront`)
-        // })
     }
     //上传身份证反面
     onChange3 = (files) => {
@@ -69,16 +57,13 @@ class BecomeDoctor extends React.Component{
             imgArr3:[]
         },()=>{
             files.map((v,i)=>{
-                lrz(files[i].url, {quality:0.3})
+                return lrz(files[i].url, {quality:0.3})
                     .then((rst)=>{
                         // 处理成功会执行
                         this.state.imgArr3.push(`${rst.base64}@cardreverse`)
                     })
             })
         });
-        // this.state.files3.map(v=>{
-        //     this.state.imgArr3.push(`${v.url}@cardreverse`)
-        // })
     }
     //上传医师资格证
     onChange4 = (files) => {
@@ -87,16 +72,13 @@ class BecomeDoctor extends React.Component{
             imgArr4:[]
         },()=>{
             files.map((v,i)=>{
-                lrz(files[i].url, {quality:0.3})
+                return lrz(files[i].url, {quality:0.3})
                     .then((rst)=>{
                         // 处理成功会执行
                         this.state.imgArr4.push(`${rst.base64}@certi2`)
                     })
             })
         })
-        // this.state.files4.map(v => {
-        //     this.state.imgArr4.push(`${v.url}@certi2`)
-        // })
     }
     //上传职称等级
     onChange5 = (files) => {
@@ -112,13 +94,9 @@ class BecomeDoctor extends React.Component{
                     })
             })
         })
-        // this.state.files5.map(v => {
-        //     this.state.imgArr5.push(`${v.url}@certi3`)
-        // })
     }
     //提交数据，按钮
     onPostData= ()=>{
-        alert(this.props.id)
         if(!this.state.imgArr.length){
             Toast.info('请上传执业医师证书！');
             return null
@@ -137,13 +115,11 @@ class BecomeDoctor extends React.Component{
         }
         //图片组合在一起
         this.state.imgArr = this.state.imgArr.concat(this.state.imgArr2,this.state.imgArr3,this.state.imgArr4,this.state.imgArr5)
-        httpPost('/uploadAuthentication',this.state.firstData,{imgStr:Array.from(new Set(this.state.imgArr))})
-            .then((res)=>{
-                alert(res.data.msg)
-                if (res.data.code===200){
-                    this.props.history.push('/user-myself')
-                }
-            })
+        UploadAuthentication(JSON.parse(this.props.match.params.data),{imgStr:Array.from(new Set(this.state.imgArr))}).then((res)=>{
+            if (res.data.code===200){
+                this.props.history.push('/user-myself')
+            }
+        })
     }
     render(){
         const Item= List.Item;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {List,WhiteSpace,WingBlank,Modal} from 'antd-mobile'
-import Star from '../../component/user.star/user.star'
+import Star from '../../component/star/user.star'
 import avatar from './ask5.jpg'
 import {connect} from 'react-redux'
 @connect(

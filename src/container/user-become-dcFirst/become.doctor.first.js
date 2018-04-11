@@ -22,13 +22,13 @@ class BecomeDoctorFirst extends React.Component{
         }
     }
     componentDidMount(){
-        Department1.then(res=>{
+        Department1().then(res=>{
             //科室数据
             this.setState({
                 dataUpload:res.data.data
             })
         })
-        AllHospital.then(res=>{
+        AllHospital().then(res=>{
             //医院数据
             this.setState({
                 hospitalList:res.data.data.list

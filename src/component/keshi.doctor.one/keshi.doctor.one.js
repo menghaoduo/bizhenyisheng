@@ -1,6 +1,6 @@
 import React from 'react'
 import {List} from  'antd-mobile'
-import Star from '../user.star/user.star'
+import Star from '../star/user.star'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 @connect(

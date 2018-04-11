@@ -20,21 +20,21 @@ class UserMyself extends React.Component {
                 {num: 0, text: '我的问诊', path: '/userquestion'},
                 {num: 0, text: '看问题', path: '/userlookhistoryproblem'}
             ],
-            dataTop:[
-                {title:'健康档案',class:'ion-ios-list',extra:'2位',isDoctor:!this.props.isDoctor},
-                {title:'特权优惠',class:'ion-ios-pricetags',extra:'5',isDoctor:!this.props.isDoctor},
-                {title:'职业信息',class:'ion-ios-box',extra:'编辑',isDoctor:this.props.isDoctor,path:'/dcworkinfo'},
-                {title:'积分纪录',class:'ion-ios-calendar-outline',extra:'50分',isDoctor:this.props.isDoctor}
-            ],
-            dataCenter: [{title:'我的二维码',class:'ion-code-download',isDoctor:this.props.isDoctor,path:'/dcmyqrcode'}],
-            dataBottom: [{title:'推荐给朋友',class:'ion-ios-people'},
-                {title:'设置',class:'ion-ios-gear',path:'/usersetting'},
-                {title:'意见反馈',class:'ion-ios-compose'}
-            ],
             bcDoctorState: true,
             bcDoctorText: ''
 
         }
+        this.props.dataBottom=[{title:'推荐给朋友',class:'ion-ios-people'},
+            {title:'设置',class:'ion-ios-gear',path:'/usersetting'},
+            {title:'意见反馈',class:'ion-ios-compose'}
+        ]
+        this.props.dataCenter=[{title:'我的二维码',class:'ion-code-download',isDoctor:this.props.isDoctor,path:'/dcmyqrcode'}]
+        this.props.dataTop = [
+            {title:'健康档案',class:'ion-ios-list',extra:'2位',isDoctor:!this.props.isDoctor},
+            {title:'特权优惠',class:'ion-ios-pricetags',extra:'5',isDoctor:!this.props.isDoctor},
+            {title:'职业信息',class:'ion-ios-box',extra:'编辑',isDoctor:this.props.isDoctor,path:'/dcworkinfo'},
+            {title:'积分纪录',class:'ion-ios-calendar-outline',extra:'50分',isDoctor:this.props.isDoctor}
+        ]
     }
     componentDidMount(){
         httpGet('/Authenticationstate').then(res=>{
@@ -65,7 +65,7 @@ class UserMyself extends React.Component {
         }
     }
     render() {
-        const {dataTop,dataCenter,dataBottom} = this.state
+        const {dataTop,dataCenter,dataBottom} = this.props
         const Item = List.Item;
         return (
             <div>

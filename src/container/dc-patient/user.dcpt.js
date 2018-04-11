@@ -3,7 +3,7 @@ import {List} from 'antd-mobile'
 import './user.dcpt.css'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
-import {Getfollowlist,MyPatient} from "../../api/api";
+import {Getfollowlist,MyPatient} from "../../api/api"
 
 @connect(
     state=>state.user
@@ -18,13 +18,13 @@ class UserDCPT extends React.Component{
     }
     componentDidMount(){
         if(this.props.isDoctor){
-            MyPatient.then(res=>{
+            MyPatient().then(res=>{
                 this.setState({
                     data:res.data.data
                 })
             })
         }else {
-            Getfollowlist.then(res=>{
+            Getfollowlist().then(res=>{
                 this.setState({
                     data:res.data.data
                 })

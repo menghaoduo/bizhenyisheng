@@ -10,7 +10,7 @@ class Star extends React.Component{
             nostar:0
         }
     }
-    full(){
+    full=()=>{
         this.state.fullstar = Math.trunc(this.state.star)
         this.state.shortstar = (this.state.star - this.state.fullstar).toFixed(2)
         // this.setState({
@@ -40,7 +40,7 @@ class Star extends React.Component{
     render(){
         return (
             <div>
-                {this.full()}
+                {this.full}
             </div>
         )
     }

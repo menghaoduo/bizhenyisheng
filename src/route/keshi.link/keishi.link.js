@@ -8,7 +8,7 @@ import KeshiDoctorPay from '../../container/keshi.doctor.pay/keshi.doctor.pay'
 import KeshiDoctorCatamnestic from  '../../container/keshi.doctor.catamnestic/keshi.doctor.catamnestic'
 import ShareQuestion from '../../container/share.question/share.question'
 import ResultArticle from '../../container/user-pay-result/result.article'
-import {httpGet} from '../../config'
+import {Department1} from "../../api/api";
 import FastDoctor from "../../container/user-fast-consultation/fast.doctor.pay";
 @withRouter
 class Kslink extends React.Component{
@@ -19,7 +19,7 @@ class Kslink extends React.Component{
         }
     }
     componentDidMount(){
-        httpGet('/Department/1').then(res=>{
+        Department1().then(res=>{
             this.setState({
                 data:res.data.data
             })
@@ -27,7 +27,7 @@ class Kslink extends React.Component{
     }
     render(){
         const datas = [
-            // {path:'/全部科室/:data',component:KeshiAll},
+            // 全部科室
             {path:'/全部科室',component:KeshiAll},
             //按科室搜索医生后,点进去向医生提问的路由
             {path:'/keshidoctorhome/:data',component:KeshiDoctorHome},

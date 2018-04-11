@@ -56,7 +56,7 @@ class AnswerLsit extends React.Component{
                                     {v.state===3?<span>已结束</span>:null}|
                                     {v.typeid===1?<span>点名咨询</span>:null}
                                     {v.typeid===2?<span>快速咨询</span>:null}
-                                    {v.typeid===2?<span>诊后咨询</span>:null}</div>
+                                    {v.typeid===3?<span>诊后咨询</span>:null}</div>
                             </div>
                             <WhiteSpace/>
                             {this.props.user.isDoctor?

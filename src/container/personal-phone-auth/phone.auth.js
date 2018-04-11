@@ -1,6 +1,6 @@
 import React from 'react'
 import {List,InputItem,Toast,Button,WingBlank,WhiteSpace} from 'antd-mobile'
-import {httpGet,httpPost} from "../../config"
+import {DoctorPerfectmaterial} from "../../api/api"
 import './phone.auth.css'
 import {withRouter} from 'react-router-dom'
 @withRouter
@@ -37,7 +37,7 @@ class PhoneAuth extends React.Component{
             Toast.info('请输入正确手机号码');
             return
         }
-        httpPost('/User/DoctorPerfectmaterial',{tel:this.state.value}).then(res=>{
+        DoctorPerfectmaterial({tel:this.state.value}).then(res=>{
             if(res.data.code ===200){
                 this.props.history.push('/personaldata')
             }
