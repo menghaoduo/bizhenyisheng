@@ -1,5 +1,5 @@
 import React from 'react'
-import {NoticeBar,WhiteSpace} from 'antd-mobile'
+import {NoticeBar,WhiteSpace,Toast,Modal} from 'antd-mobile'
 import Search from '../../component/search/search'
 import KsList from '../../component/keshi.list/keshi.list'
 import WzList from '../../component/wenzhen.list/wenzhen.list'
@@ -9,33 +9,83 @@ import ShareList from  '../../component/share.list/share.list'
 import {connect} from 'react-redux'
 import logo from './logo.png'
 import './get.doctor.css'
-import {httpPost} from "../../config";
-let localId;
+import {httpGet, httpPost} from "../../config";
+let START,END,recordTimer;
 @connect(
     state=>state
 )
 class GetDoctor extends React.Component{
-    start=()=>{
+    start=(e)=>{
+        e.preventDefault();
         httpPost('/WeixinJsConfig?url=http://bzys.caa.edu.cn:9000/get-doctor').then(res=>{
                 window.wx.config({
-                    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
                     appId: res.data.data.appId, // 必填，公众号的唯一标识
                     timestamp:res.data.data.timestamp , // 必填，生成签名的时间戳
                     nonceStr: res.data.data.nonceStr, // 必填，生成签名的随机串
                     signature: res.data.data.signature,// 必填，签名
-                    jsApiList: ['startRecord'] // 必填，需要使用的JS接口列表
+                    jsApiList: ['startRecord','uploadVoice','stopRecord','downloadVoice','onVoiceRecordEnd'] // 必填，需要使用的JS接口列表
                 });
+            recordTimer = setTimeout(function(){
+                window.wx.ready(function(){
+                    START = new Date().getTime();
+                    window.wx.startRecord({
+                            success:function (res) {
+                                window.wx.onVoiceRecordEnd({
+                                // 录音时间超过一分钟没有停止的时候会执行 complete 回调
+                                    complete: function (res) {
+                                        alert('最多录制60秒')
+                                    }
+                                });
+                            }}
+                    )
+                })
+            },300)
             }
         )
-        window.wx.ready(function(){window.wx.startRecord()})
     }
-    stop=()=>{
-        window.wx.ready(function(){window.wx.stopRecord({
-            success: function (res) {
-                alert(res)
-                localId = res.localId;
-            }
-        })})
+    stop=(e)=>{
+        e.preventDefault();
+        END = new Date().getTime();
+        if (END - START <300){
+            END = 0;
+            START = 0;
+            //小于300ms，不录音
+            clearTimeout(recordTimer);
+            Toast.info('录音事件太短了！')
+        }else if(END - START >=6000){
+            END = 0;
+            START = 0;
+            clearTimeout(recordTimer);
+            window.wx.onVoiceRecordEnd({
+                // 录音时间超过一分钟没有停止的时候会执行 complete 回调
+                complete: function (res) {
+                    alert('最多录制60秒')
+                }
+            });
+        }else {
+            window.wx.stopRecord({
+                success: function (res) {
+                    Modal.alert('上传消息', '', [
+                        { text: '不', onPress: () => alert('eee'), style: 'default' },
+                        { text: '好的', onPress: () => {
+                            alert('ggg')
+                            window.wx.uploadVoice({
+                                localId: res.localId, // 需要上传的音频的本地ID，由stopRecord接口获得
+                                isShowProgressTips: 1, // 默认为1，显示进度提示
+                                success: function (re) {
+                                    alert('aaa')
+                                    //把录音在微信服务器上的id（res.serverId）发送到自己的服务器供下载。
+                                    httpPost('/uploadVoiceServices?media_id='+re.serverId).then(res=>{
+                                        console.log(res)
+                                    })
+                                }
+                            })
+                        }},
+                    ])
+                }
+            })
+        }
     }
     render(){
         const all = {allkeshi:true}
@@ -75,7 +125,7 @@ class GetDoctor extends React.Component{
                 <WhiteSpace style={{backgroundColor:'#f5f5f9'}}/>
                 {this.props.help.getDoctor?<DrawerHelp helpList={getDoctorList}/>:null}
 
-                <div onTouchStart={this.start} onTouchEnd={this.stop}>录音</div>
+                <div onTouchStart={this.start} onTouchEnd={this.stop} style={{height:'40px'}}>录音</div>
             </div>
         )
     }

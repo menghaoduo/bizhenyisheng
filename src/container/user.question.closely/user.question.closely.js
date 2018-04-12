@@ -2,7 +2,8 @@ import React from 'react'
 import {TextareaItem,List,WhiteSpace,ImagePicker,Button,WingBlank,Toast} from 'antd-mobile'
 import {httpGet,httpPost} from "../../config";
 import {withRouter} from 'react-router-dom'
-import lrz from 'lrz'
+import {HandleImage} from "../../until"
+
 @withRouter
 class UserQuestionClosely extends React.Component{
     constructor(props){
@@ -13,21 +14,6 @@ class UserQuestionClosely extends React.Component{
             imgArr:[],
             problemContent:''
         }
-    }
-    //图片
-    onChange = (files, type, index) => {
-        this.setState({
-            files,
-            imgArr:[]
-        },()=>{
-            files.map((v,i)=>{
-                lrz(files[i].url,{quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr.push(rst.base64)
-                    })
-            })
-        });
     }
     componentDidMount(){
         httpGet('/Qa/getOrderById?code='+this.props.match.params.data).then(res=>{
@@ -74,7 +60,7 @@ class UserQuestionClosely extends React.Component{
                 <List renderHeader={() => '如果有补充的照片，请上传，最多6张。'}>
                     <ImagePicker
                         files={this.state.files}
-                        onChange={this.onChange}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files',imgStr:'imgArr',str:''})}
                         multiple
                         selectable={this.state.files.length < 6}
                         onImageClick={(index, fs) => console.log(index, fs)}

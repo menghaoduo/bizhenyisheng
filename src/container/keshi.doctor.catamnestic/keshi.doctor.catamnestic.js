@@ -6,7 +6,8 @@ import { keshiDoctorFillHelpP } from '../../redux/user.help.redux'
 import DrawerHelp from '../../component/drawer.help/drawer.help'
 import { connect } from 'react-redux'
 import {httpPost} from "../../config";
-import lrz from 'lrz'
+import {HandleImage} from "../../until";
+
 const getDoctorList ={
     title:'如何填写',
     type1:'',
@@ -73,21 +74,6 @@ class KeshiDoctorCatamnestic extends React.Component{
             if (res.data.code===200){
                 this.props.history.push('/dcpay/'+JSON.stringify({id:res.data.data.id}))
             }
-        })
-    }
-    //处理图片
-    onChange = (files) => {
-        this.setState({
-            files,
-            imgArr:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url,{quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr.push(rst.base64)
-                    })
-            })
         })
     }
     //是否公开问题
@@ -160,7 +146,7 @@ class KeshiDoctorCatamnestic extends React.Component{
                 <List renderHeader={() => '上传门诊或住院信息、症状照片、病例、检查单，限6张，仅医生可见。'}>
                     <ImagePicker
                         files={this.state.files}
-                        onChange={this.onChange}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files',imgStr:'imgArr',str:''})}
                         multiple
                         selectable={this.state.files.length < 6}
                         onImageClick={(index, fs) => console.log(index, fs)}

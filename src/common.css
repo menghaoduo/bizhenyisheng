@@ -17,6 +17,11 @@ p{
 }
 div{
     line-height: .18rem;
+    user-select: none;
+}
+/*让我们的手机知道这个元素是可点击的*/
+a{
+    cursor: pointer;
 }
 ol, li {
     list-style: none;

@@ -11,6 +11,7 @@ axios.interceptors.request.use(function (config) {
 })
 axios.interceptors.response.use(function (config) {
     console.log(config.data)
+    //code为401时，微信未认证状态
     if(config.data.code===401){
         window.location.href = config.data.data;
     }

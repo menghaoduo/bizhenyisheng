@@ -1,7 +1,7 @@
 import React from 'react'
 import {List,ImagePicker,WhiteSpace,WingBlank,Button,Toast} from 'antd-mobile'
 import {UploadAuthentication} from "../../api/api"
-import lrz from 'lrz'
+import {HandleImage} from "../../until"
 import {connect} from 'react-redux'
 @connect(state=>state.user)
 class BecomeDoctor extends React.Component{
@@ -19,81 +19,6 @@ class BecomeDoctor extends React.Component{
             imgArr4:[],//医师资格证
             imgArr5:[],//职称等级
         }
-    }
-    //上传执业医师证书
-    onChange = (files) => {
-        this.setState({
-            files,
-            imgArr:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr.push(`${rst.base64}@certi1`)
-                    })
-            })
-        })
-    }
-    //上传身份证正面
-    onChange2 = (files) => {
-        this.setState({
-            files2:files,
-            imgArr2:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr2.push(`${rst.base64}@cardfront`)
-                    })
-            })
-        });
-    }
-    //上传身份证反面
-    onChange3 = (files) => {
-        this.setState({
-            files3:files,
-            imgArr3:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr3.push(`${rst.base64}@cardreverse`)
-                    })
-            })
-        });
-    }
-    //上传医师资格证
-    onChange4 = (files) => {
-        this.setState({
-            files4:files,
-            imgArr4:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr4.push(`${rst.base64}@certi2`)
-                    })
-            })
-        })
-    }
-    //上传职称等级
-    onChange5 = (files) => {
-        this.setState({
-            files5:files,
-            imgArr5:[]
-        },()=>{
-            files.map((v,i)=>{
-                return lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr5.push(`${rst.base64}@certi3`)
-                    })
-            })
-        })
     }
     //提交数据，按钮
     onPostData= ()=>{
@@ -131,7 +56,7 @@ class BecomeDoctor extends React.Component{
                     <p style={{margin:'0',color: '#888',paddingTop:'9px',paddingLeft:'.15rem'}}>上传执业资格证书</p>
                     <ImagePicker
                         files={this.state.files}
-                        onChange={this.onChange}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files',imgStr:'imgArr',str:'@certi1'})}
                         multiple
                         selectable={this.state.files.length < 4}
                     />
@@ -139,7 +64,7 @@ class BecomeDoctor extends React.Component{
                     <p style={{margin:'0',color: '#888',paddingTop:'9px',paddingLeft:'.15rem'}}>上传医师资格证书</p>
                     <ImagePicker
                         files={this.state.files4}
-                        onChange={this.onChange4}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files4',imgStr:'imgArr4',str:'@certi2'})}
                         multiple
                         selectable={this.state.files4.length < 4}
                     />
@@ -148,7 +73,7 @@ class BecomeDoctor extends React.Component{
                     <ImagePicker
                         files={this.state.files5}
                         multiple
-                        onChange={this.onChange5}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files5',imgStr:'imgArr5',str:'@cardfront'})}
                         selectable={this.state.files5.length < 4}
                     />
                     {/*身份证正反面或驾驶证*/}
@@ -156,7 +81,7 @@ class BecomeDoctor extends React.Component{
                     <ImagePicker
                         files={this.state.files2}
                         multiple
-                        onChange={this.onChange2}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files2',imgStr:'imgArr2',str:'@cardreverse'})}
                         selectable={this.state.files2.length < 4}
                     />
                     {/*其他证明材料*/}
@@ -164,7 +89,7 @@ class BecomeDoctor extends React.Component{
                     <ImagePicker
                         files={this.state.files3}
                         multiple
-                        onChange={this.onChange3}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files3',imgStr:'imgArr3',str:'@certi1'})}
                         selectable={this.state.files3.length < 4}
                     />
                 </List>

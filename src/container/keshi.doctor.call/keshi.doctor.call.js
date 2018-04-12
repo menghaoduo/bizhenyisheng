@@ -6,7 +6,8 @@ import { keshiDoctorFillHelpP } from '../../redux/user.help.redux'
 import DrawerHelp from '../../component/drawer.help/drawer.help'
 import { connect } from 'react-redux'
 import {httpPost} from '../../config'
-import lrz from 'lrz'
+import {HandleImage} from "../../until"
+
 @connect(
     state=>(
         state.help,
@@ -27,22 +28,6 @@ class KeshiDoctorCall extends React.Component{
             money:JSON.parse(this.props.match.params.data).money,
             djdcid:JSON.parse(this.props.match.params.data).dcid
         }
-    }
-    //图片
-    onChange = (files) => {
-        this.setState({
-            files,
-            imgArr:[]
-        },()=>{
-            files.map((v,i)=>{
-                lrz(files[i].url, {quality:0.3})
-                    .then((rst)=>{
-                        // 处理成功会执行
-                        this.state.imgArr.push(rst.base64)
-                    })
-            })
-            console.log(this.state.imgArr)
-        })
     }
     //是否公开问题
     onChangeShare = () => {
@@ -118,7 +103,7 @@ class KeshiDoctorCall extends React.Component{
                 <List renderHeader={() => '上传症状照片、病例、检查单，限6张，仅医生可见。'}>
                     <ImagePicker
                         files={this.state.files}
-                        onChange={this.onChange}
+                        onChange={(files)=>HandleImage(this,files,{fileStr:'files',imgStr:'imgArr',str:''})}
                         multiple
                         selectable={this.state.files.length < 6}
                         onImageClick={(index, fs) => console.log(index, fs)}
